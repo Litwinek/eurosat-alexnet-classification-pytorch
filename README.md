@@ -70,13 +70,26 @@ class AlexNet(nn.Module):
         x = self.classifier(x)
         return x
 ```
+### Training Progress
+Below are the training loss and accuracy curves for 2 experiments:
+- **Without augmentation** (10 epochs)
+- **With data augmentation** (15 epochs)
+
+#### **Without augmentation** (10 epochs)
+![Training loss and accuracy without augmentation](EuroSAT_10_epochs_metrics.png)
+#### **With data augmentation** (15 epochs)
+![Training loss and accuracy without augmentation](EuroSAT_15_epochs_with_augmentation_metrics.png)
+#### **Observations:**
+- Data augmentation resulted in smoother accuracy growth and slightly better generalization.
+- Overfitting was less pronounced with augmentation.
+##### Data augmentation resulted in better regularization and higher final training accuracy.
 ### Key Insights & Future Work
 - The custom AlexNet achieved 77.74% accuracy on the test set.
 - Data augmentation improved model generalization.<br>
 #### **Future Possibilities**
-- Hyperparameter tuning
-- Using transfer learning with deeper architectures (e.g. ResNet, DenseNet)
-- More extensive data augmentation
+- Hyperparameter tuning.
+- Using transfer learning with deeper architectures (e.g. ResNet, DenseNet).
+- More extensive data augmentation.
 ### Papers
 - [ImageNet Classification with Deep Convolutional Neural Networks](https://www.researchgate.net/publication/267960550_ImageNet_Classification_with_Deep_Convolutional_Neural_Networks)
 - [EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification](https://ieeexplore.ieee.org/document/8519248)
