@@ -9,7 +9,7 @@ Project presents a **Convolutional Neural Network** for classifying satellite im
 - **Dataset:** [EuroSAT dataset (RGB version)](https://zenodo.org/records/7711810#.ZAm3k-zMKEA)
 - **Number of Classes:** 10 (e.g. Annual Crop, Forest, Residential etc.).
 - **Image Size:** 64x64 pixels, RGB.
-**Preprocessing and Augmentation**
+#### **Preprocessing and Augmentation**
 - Images were resized to 224x224 pixels to fit the **AlexNet** input size.
 - **RandomHorizontalFlip:** Randomly flips images horizontally with probability 0.5.
 - **RandomVerticalFlip:** Randomly flips images vertically with probability 0.5.
@@ -73,10 +73,10 @@ class AlexNet(nn.Module):
 ### Key Insights & Future Work
 - The custom AlexNet achieved 77.74% accuracy on the test set.
 - Data augmentation improved model generalization.<br>
-**Future Possibilities**
+#### **Future Possibilities**
 - Hyperparameter tuning
 - Using transfer learning with deeper architectures (e.g. ResNet, DenseNet)
--More extensive data augmentation
+- More extensive data augmentation
 ### Papers
 - [ImageNet Classification with Deep Convolutional Neural Networks](https://www.researchgate.net/publication/267960550_ImageNet_Classification_with_Deep_Convolutional_Neural_Networks)
 - [EuroSAT: A Novel Dataset and Deep Learning Benchmark for Land Use and Land Cover Classification](https://ieeexplore.ieee.org/document/8519248)
