@@ -72,7 +72,7 @@ class AlexNet(nn.Module):
 ```
 ### Key Insights & Future Work
 - The custom AlexNet achieved 77.74% accuracy on the test set.
-- Data augmentation improved model generalization.
+- Data augmentation improved model generalization.<br>
 **Future Possibilities**
 - Hyperparameter tuning
 - Using transfer learning with deeper architectures (e.g. ResNet, DenseNet)
